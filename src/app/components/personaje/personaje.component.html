@@ -1,0 +1,37 @@
+<!-- <div class="row card-container">
+    <div class="col-12">
+        <div class="row col-12">
+            <div class="col-12 col-md-4"  style="margin: 2em;">
+                <mat-card *ngFor="let card of cardList">
+                    <mat-card-header>
+                    <mat-card-title>{{ card.name }}</mat-card-title>
+                    <mat-card-subtitle>{{ card.role }}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="{{ card.images }}" alt="Descripción de la imagen">
+                    <mat-card-actions>
+                    <button mat-button (click)="verHistoria(card?.mal_id)"  >Historia</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<div class="row card-container" style="margin: 3em;">
+    <div class="col-12">
+        <div class="row">
+                <mat-card  class="col-12 col-md-2" *ngFor="let card of cardList" style="text-align: center;margin: 1em;">
+                    <mat-card-header>
+                    <mat-card-title>{{ card.name }}</mat-card-title>
+                    <mat-card-subtitle>{{ card.role }}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="{{ card.images }}" alt="Descripción de la imagen">
+                    <mat-card-actions>
+                    <button mat-button (click)="verHistoria(card?.mal_id)" class="btn btn-primary" >Historia</button>
+                    </mat-card-actions>
+                </mat-card>
+        </div>
+    </div>
+</div>

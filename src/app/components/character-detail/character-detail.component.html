@@ -1,0 +1,86 @@
+
+
+<div class="row card-container">
+    <div class="col-12">
+      <div class="row justify-content-center"> <!-- Utiliza Flexbox aquí -->
+        <div class="col-12 col-md-8" style="margin: 2em;" >
+          <mat-card>
+            <mat-card-header>
+                    <mat-card-title>{{ personaje.name }}</mat-card-title>
+                    <mat-card-subtitle>{{ personaje.name_kanji
+                    }}</mat-card-subtitle>
+                    </mat-card-header>
+                    
+                    <mat-card-actions>
+
+                        <div class="row col-12">
+                            
+                            <div class="col-12 col-md-4">
+                                <img mat-card-image src="{{ personaje.images.jpg.image_url}}" alt=""width="180" height="300"> 
+                            </div>
+                            <div class=" col-12 col-md-4" > 
+                                <div *ngIf="nickname.length>0">
+                                    <h2>Nicknames:</h2>
+                                    <ul>
+                                        <li *ngFor="let item of nickname">
+                                        {{ item }}
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div *ngIf="mangas.length>0">
+                                    <h2>Mangas:</h2>
+                                    <ul>
+                                        <li *ngFor="let item of mangas">
+                                        {{ item }}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class=" col-12 col-md-4"> 
+                                <div>
+                                    <button mat-button class="btn btn-secondary" (click)="casa()" >Home</button>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12"> 
+                                <br>
+                                <h3>{{personaje.about}}</h3>
+                             </div>
+
+                             <div class="col-12 col-md-12"> 
+                                <br>
+                                <h1>Voices</h1>
+                                <div>
+                                    <table>
+                                        <tr>
+                                          <th>Person</th>
+                                          <th>Language</th>
+                                          <th>Photo</th>
+                                        </tr>
+                                        <tr *ngFor="let item of voices">
+                                            <td>{{ item.person }}</td>
+                                            <td>{{ item.language }}</td>
+                                            <td>
+                                                <img src="{{ item.imagen }}" alt="" width="40%" style="display: block;  margin: 0 auto; ">
+                                            </td>
+                                          </tr>
+                                        
+                                      </table>
+                                      
+                                </div>
+                             </div>
+                        </div>
+
+                        <div class="row col-12">
+                           
+                        </div>
+                    <!-- <button mat-button (click)="verHistoria(card?.mal_id)"  >Historia</button> -->
+                    
+                    </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  

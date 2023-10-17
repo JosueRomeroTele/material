@@ -1,0 +1,46 @@
+.card-container {
+    /* Ajusta el contenedor principal según tus necesidades */
+    height: 100vh; /* Establece la altura al 100% de la altura de la ventana */
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #673ab7;
+    font-family: 'Nunito',sans-serif;
+    padding: 0 20px;
+  }
+  .row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Centra verticalmente las tarjetas en el contenedor */
+    /* Otras propiedades de estilo según tus necesidades */
+  }
+  
+  /* Estilo para la tabla */
+table {
+  width: 100%; /* Ajusta el ancho de la tabla al 100% del contenedor */
+  border-collapse: collapse; /* Colapsa los bordes de las celdas */
+  margin: 20px 0; /* Agrega margen superior e inferior */
+}
+
+/* Estilo para las celdas de encabezado */
+th {
+  background-color: #f0f0f0; /* Color de fondo del encabezado */
+  text-align: left; /* Alineación del texto en el encabezado */
+  padding: 8px; /* Relleno en píxeles */
+  border: 1px solid #ddd; /* Borde de celdas del encabezado */
+}
+
+/* Estilo para las celdas de datos */
+td {
+  padding: 8px; /* Relleno en píxeles */
+  border: 1px solid #ddd; /* Borde de celdas de datos */
+}
+
+/* Estilo para filas impares (opcional) */
+tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Color de fondo para filas impares */
+}

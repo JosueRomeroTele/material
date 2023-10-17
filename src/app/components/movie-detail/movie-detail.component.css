@@ -1,0 +1,105 @@
+/* .example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  } */
+  
+
+*{padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #673ab7;
+  font-family: 'Nunito',sans-serif;
+  padding: 0 20px;
+}
+
+.card-container{
+  display: flex;
+  width: 600px;
+  height: auto;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px 2px;
+}
+
+.header{
+  border-right: 1px solid;
+}
+.descripcion{
+  background: #fbfbfb;
+}
+
+.header, .descripcion{
+  padding: 20px;
+  text-align: center;
+}
+
+.header a{
+  position: relative;
+  display: block;
+}
+.header img{
+  border-radius: 10%;
+  box-shadow: 0 0 0 8px rgba(0,0,0,.06);
+  margin: 20px 30px;
+  transition: .2s;
+}
+
+.header a:hover img{
+  box-shadow: 0 0 0 10px rgba(0,0,0,.1);
+}
+
+.header h2{
+  color:#f0522a
+}
+
+.header h4 {
+  margin-bottom: 20px;
+}
+
+.descripcion{
+  position: relative;
+}
+.descripcion p{
+  margin: 20px 30px
+}
+.descripcion .social{
+  margin-top: 25px;
+}
+
+.descripcion .social .a{
+  display: inline-block;
+  padding: 0 15px;
+  color: #f0522a;
+}
+
+@media(max-width:640px){
+  .card-container{
+    display: block;
+    width: 450px;
+  }
+
+  .header{
+    padding: 20px 20px 5px 20px;
+    border: none;
+  }
+
+  .descripcion{
+    padding: 5px 20px 20px 20px;
+    background: transparent;
+  }
+
+  .header h4{
+    margin: 0;
+  }
+}
